@@ -1,0 +1,69 @@
+//HEADER
+
+header {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
+	h1 {
+		color: $colorBlanco;
+		margin-left: 20px;
+		z-index: 50;
+		font-family: $tipoUno;
+		font-weight: 600;
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		
+		a:hover {
+			text-decoration: none;
+			color:white;
+		}
+
+		@media screen and (max-width: 600px) {
+			font-size: 1.8em;
+		}
+	}
+}
+.header__2 {
+	z-index: 101;
+	background-color: #070707;
+	margin-bottom: 230px;
+}
+.h2__oculto {
+	display: none;
+}
+.menu__lineas {
+	position: fixed;
+	right: 20px;
+	width: 30px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	z-index: 200;
+	cursor: pointer;
+}
+
+.menu__lineas__linea1 {
+	@extend %lineas__boton;
+}
+.menu__lineas__linea2 {
+	@extend %lineas__boton;
+	margin: 5px 0;
+}
+.menu__lineas__linea3 {
+	@extend %lineas__boton;
+}
+.menu__lineas__linea1B {
+	transform: rotate(45deg) translate(4px, 6px);
+}
+.menu__lineas__linea2B {
+	opacity: 0;
+}
+.menu__lineas__linea3B {
+	transform: rotate(-45deg) translate(6px, -7px);
+}

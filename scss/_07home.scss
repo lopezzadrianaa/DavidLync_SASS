@@ -1,0 +1,17 @@
+//HOME
+
+.carousel-item {
+	@extend %fondos;
+}
+.fondo__uno {
+	background-image: url('../img/01.jpg');
+	@extend %fondos;
+}
+.fondo__dos {
+	background-image: url('../img/02.jpg');
+	@extend %fondos;
+}
+.fondo__tres {
+	background-image: url('../img/03.jpg');
+	@extend %fondos;
+}

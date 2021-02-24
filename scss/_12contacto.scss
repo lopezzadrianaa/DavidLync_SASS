@@ -1,0 +1,46 @@
+//CONTACTO
+
+.contenido__contacto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form {
+	width: 450px;
+	margin: auto;
+	border: $bordes;
+	padding: 20px 20px;
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+		margin: 0 10px;
+	}
+}
+input {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	font-size: 1.3em;
+	border: none;
+}
+textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	font-size: 1.3em;
+	border: none;
+	min-height: 200px;
+	max-height: 250px;
+	max-width: 100%;
+}
+.boton__formulario {
+	background: transparent;
+	border: $bordes;
+	color:$colorBlanco;
+	&:hover {
+		background-color: $colorBlanco;
+		border: $bordes;
+		color: $colorFondos;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,53 @@
+//GENERALES
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	transition: .5s;
+}
+html {
+	font-size: 12px;
+	font-family: $tipoUno;
+	color: $colorBlanco;
+}
+section {
+	background-color: $colorFondos;
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+}
+.centrado {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 120px;
+	padding-bottom: 90px;
+}
+#container {
+	>* {
+		width: 100%;
+		height: auto;
+		min-height: 100vh;
+		position: relative;
+	}
+}
+.header__area {
+	position: fixed;
+	top: 21px;
+	left: 230px;
+	font-family: $tipoUno;
+	font-size: 0.5em;
+	span {
+		font-size: 0.7em;
+		color: lightgray;
+	}
+
+	@media screen and (max-width: 1200px) {
+		left: 230px;
+	}
+
+	@media screen and (max-width: 600px) {
+		left: 175px;
+	}
+}

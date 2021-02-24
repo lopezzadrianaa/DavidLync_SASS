@@ -1,0 +1,52 @@
+//FILMOGRAFIA
+
+.contenido__filmografia {
+	@include grid (repeat(auto-fit, minmax(300px, 1fr)), 40px);
+}
+.article__filmografia{
+	margin: auto;
+	background-color: transparent;
+	border: $bordes;
+	color:$colorBlanco;
+	width: 300px;
+	max-height: 602px;
+	min-height: 602px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 20px;
+	transition-property: background-color;
+	transition-duration: 1s;
+	&:hover {
+		background-color: $colorBlanco;
+		color: black;
+	}
+}
+
+.article__filmografia__img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.article__filmografia__h2 {
+	font-family: $tipoUno;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.article__filmografia__h3 {
+	font-family: $tipoUno;
+	font-size: 1em;
+}
+
+.article__filmografia__h4 {
+	font-family: $tipoUno;
+	font-size: 1em;
+	margin-top: 10px;
+}
+
+.article__filmografia__p {
+	text-align: justify;
+	font-family: $tipoDos;
+	font-weight: 400;
+}

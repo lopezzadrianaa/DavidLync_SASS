@@ -1,0 +1,62 @@
+//DISCOGRAFIA
+
+.contenido__discografia {
+	@include grid (repeat(auto-fit, minmax(300px, 1fr)), 40px);
+	justify-content: center;
+	align-items: center;
+
+	@media screen and (min-width: 768px){
+		@include grid (repeat(auto-fit, minmax(350px, 1fr)), 40px);
+	}
+}
+
+.musica {
+	margin: auto;
+	width: 300px;
+	border: $bordes;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	position: relative;
+	transition-property: background-color;
+	transition-duration: 1s;
+	&:hover {
+		background-color: $colorBlanco;
+	}
+
+	@media (min-width: 720px) {
+		width: 350px;
+	}
+}
+
+.musica__h2 {
+	position: absolute;
+	font-family: $tipoUno;
+	font-size: 1.3em;
+	color:$colorGris;
+	left: 12px;
+	bottom: 7px;
+	@media (min-width: 720px) {
+		left: 25px;
+		bottom: 10px;
+	}
+}
+
+.musica__iframe {
+	width: 300px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	@media (min-width: 720px) {
+		width: 350px;
+	}
+}
+
+.musica__iframe__iframe {
+	width: 280px;
+	
+	@media (min-width: 720px) {
+		width: 300px;
+	}
+}

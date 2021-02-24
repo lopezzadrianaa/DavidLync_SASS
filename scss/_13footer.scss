@@ -1,0 +1,17 @@
+//FOOTER
+
+.footer {
+	width: 100%;
+	height: 70px;
+	background-color:$colorFondos;
+	display: flex;
+	justify-content: center;
+}
+
+.footer__parrafo {
+	font-size: 1em;
+	color: $colorBlanco;
+	font-family: $tipoDos;
+	font-weight: 500;
+	line-height: 70px;
+}
